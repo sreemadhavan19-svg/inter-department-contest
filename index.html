@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inter-Department Contest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <p class="tag">COLLEGE EVENT MANAGEMENT</p>
+      <h1>Inter-Department Debate & Elocution Contest</h1>
+      <p>Share your ideas. Speak with confidence. Make a difference.</p>
+      <a href="#register" class="btn">Register Now</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#register">Registration</a>
+    <a href="#rules">Rules</a>
+    <a href="#results">Results</a>
+  </nav>
+
+  <main id="home">
+    <section class="section intro">
+      <h2>Welcome to Our Contest</h2>
+      <p>
+        This platform helps students from different departments
+        participate in debate and elocution competitions.
+        Register online and showcase your communication skills.
+      </p>
+    </section>
+
+    <section id="events" class="section">
+      <h2>Our Events</h2>
+      <div class="event-grid">
+        <article class="event-card">
+          <div class="event-icon">🎤</div>
+          <h3>Debate Competition</h3>
+          <p>Present arguments, share opinions and think critically.</p>
+          <p><strong>Topic:</strong> Technology: Boon or Bane?</p>
+        </article>
+
+        <article class="event-card">
+          <div class="event-icon">🗣️</div>
+          <h3>Elocution Contest</h3>
+          <p>Deliver a speech confidently before an audience.</p>
+          <p><strong>Topic:</strong> The Future of Artificial Intelligence</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="register" class="section">
+      <h2>Student Registration</h2>
+      <p class="muted">Fill in your details to participate.</p>
+
+      <form id="registrationForm">
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName"
+               placeholder="Enter your full name" required>
+
+        <label for="rollNumber">Register Number</label>
+        <input type="text" id="rollNumber"
+               placeholder="Enter your register number" required>
+
+        <label for="department">Department</label>
+        <select id="department" required>
+          <option value="">Select Department</option>
+          <option>Computer Science</option>
+          <option>Computer Science and Business Systems</option>
+          <option>Artificial Intelligence</option>
+          <option>Information Technology</option>
+          <option>Electronics and Communication</option>
+          <option>Mechanical Engineering</option>
+          <option>Other</option>
+        </select>
+
+        <label for="year">Year of Study</label>
+        <select id="year" required>
+          <option value="">Select Year</option>
+          <option>1st Year</option>
+          <option>2nd Year</option>
+          <option>3rd Year</option>
+          <option>4th Year</option>
+        </select>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email"
+               placeholder="Enter your email" required>
+
+        <label for="competition">Competition Type</label>
+        <select id="competition" required>
+          <option value="">Select Competition</option>
+          <option>Debate</option>
+          <option>Elocution</option>
+        </select>
+
+        <button type="submit" class="btn">Submit Registration</button>
+        <p id="formMessage" role="status"></p>
+      </form>
+    </section>
+
+    <section id="rules" class="section">
+      <h2>Competition Rules</h2>
+      <div class="rules-box">
+        <h3>Debate Rules</h3>
+        <ul>
+          <li>Speak on the assigned topic.</li>
+          <li>Respect other participants' opinions.</li>
+          <li>Each participant gets 3 minutes to speak.</li>
+          <li>Use respectful language and valid arguments.</li>
+        </ul>
+
+        <h3>Elocution Rules</h3>
+        <ul>
+          <li>Speech duration is 3–5 minutes.</li>
+          <li>Speak clearly and confidently.</li>
+          <li>Stay relevant to the selected topic.</li>
+          <li>Judges' decisions are final.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="results" class="section">
+      <h2>Competition Results</h2>
+      <p class="muted">
+        Results will be announced by the event organizers.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Competition</th>
+              <th>Winner</th>
+              <th>Department</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody">
+            <tr>
+              <td colspan="3">Results have not been published yet.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="admin" class="section admin-section">
+      <h2>Organizer: Publish Results</h2>
+      <p class="muted">Demo feature: enter the winner's details.</p>
+
+      <form id="resultForm">
+        <label for="resultCompetition">Competition</label>
+        <select id="resultCompetition" required>
+          <option value="">Select Competition</option>
+          <option>Debate</option>
+          <option>Elocution</option>
+        </select>
+
+        <label for="winnerName">Winner Name</label>
+        <input id="winnerName" required placeholder="Enter winner name">
+
+        <label for="winnerDepartment">Winner Department</label>
+        <input id="winnerDepartment" required
+               placeholder="Enter department">
+
+        <button type="submit" class="btn">Publish Result</button>
+        <p id="resultMessage" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Inter-Department Debate & Elocution Contest</p>
+    <p>Designed as a College Mini Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
